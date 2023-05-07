@@ -1,2 +1,2 @@
 # Portfolio-FrontEnd
-My Portfolio 👌Angular + TS
+My Portfolio 👌Modulo 2 HTML CCS JS BOOSTRAP
