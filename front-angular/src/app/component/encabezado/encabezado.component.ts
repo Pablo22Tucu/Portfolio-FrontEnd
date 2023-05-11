@@ -4,16 +4,17 @@ import { InfportfolioService } from 'src/app/services/infportfolio.service';
 @Component({
   selector: 'app-encabezado',
   templateUrl: './encabezado.component.html',
-  styleUrls: ['./encabezado.component.css']
+  styleUrls: ['./encabezado.component.css'],
+  providers:[InfportfolioService]
 })
+
 export class EncabezadoComponent implements OnInit{
-  miPortfolio:any;
+  miPortfolio:any = [];
   constructor(private datosPortfolio:InfportfolioService) { }
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerInfPortfolio().subscribe(data =>{
-    console.log(data);
-    this.miPortfolio = data;     
+      this.miPortfolio = data;     
     });
   }
 

@@ -1,10 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { InfportfolioService } from 'src/app/services/infportfolio.service';
 
 @Component({
   selector: 'app-sobremi',
   templateUrl: './sobremi.component.html',
   styleUrls: ['./sobremi.component.css']
 })
-export class SobremiComponent {
+export class SobremiComponent implements OnInit {
+    miPortfolio:any = [];
+    constructor( private datosPortfolio:InfportfolioService ) { }
+  
+    ngOnInit(): void {
+      this.datosPortfolio.obtenerInfPortfolio().subscribe(data =>{
+        this.miPortfolio = data;     
+      });
+    }
 
 }

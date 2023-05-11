@@ -9,7 +9,7 @@ export class InfportfolioService {
 
   constructor(private http:HttpClient) { }
 
-  obtenerInfPortfolio():Observable<any>{
+  obtenerInfPortfolio():Observable<any> {
     return this.http.get('./assets/data/data.json');
   }  
 }

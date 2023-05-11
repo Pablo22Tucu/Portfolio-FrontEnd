@@ -10,6 +10,7 @@ import { SkillylogrosComponent } from './component/skillylogros/skillylogros.com
 import { PiepaginaComponent } from './component/piepagina/piepagina.component';
 //import { InfportfolioService } from './services/infportfolio.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ScrollToTopComponent } from './component/scroll-to-top/scroll-to-top.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     SobremiComponent,
     ExpyeduComponent,
     SkillylogrosComponent,
-    PiepaginaComponent
+    PiepaginaComponent,
+    ScrollToTopComponent
   ],
   imports: [
     BrowserModule,

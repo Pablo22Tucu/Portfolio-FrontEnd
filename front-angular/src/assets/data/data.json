@@ -1,6 +1,80 @@
 {
   "name": "PABLO ANDRES AMAYA",
-  "img": {
-    "src": "../assets/imagenes/baner1.jpg"
-  }
+  "src": "../assets/imagenes/baner1.jpg",
+  "sobremi": "Soy una persona apasionada por la tecnología y la electrónica, con una gran curiosidad y capacidad para aprender. A lo largo de mi carrera de 23 años en una empresa del ámbito financiero con 1400 empleados, he tenido la oportunidad de trabajar con muchos equipos de trabajo y siempre he destacado por mi buen trato personal y mi capacidad para colaborar con los demás. Recientemente he decidido cambiar el rumbo de mi carrera para enfocarme en el desarrollo de aplicaciones web y móvil. Me encanta el desafío que supone aprender nuevas habilidades y estoy seguro de que mi curiosidad y buena comprensión serán una gran ventaja en este campo. Una de las cosas que más disfruto es trabajar en equipo y colaborar con otros profesionales para lograr objetivos comunes. Me considero una persona cordial, con un buen sentido del humor y siempre con una actitud positiva. Estoy convencido de que mi experiencia laboral, mi pasión por la tecnología y mi facilidad para trabajar en equipo serán una gran ventaja para cualquier proyecto en el que trabaje. Me encanta enfrentar nuevos desafíos y estoy seguro de que puedo aportar mucho valor a cualquier equipo que me dé la oportunidad de formar parte de él. Gracias por tomarte el tiempo para conocerme. Estoy emocionado por las oportunidades que puedan surgir y estoy seguro de que podemos hacer grandes cosas juntos.",
+  "experiencia": [
+    {
+      "cargo": "Senior Web Developer",
+      "empresa": "Intelitec Solutions",
+      "tareas": "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.",
+      "tiempo": "March 2013 - Present"
+    },
+    {
+      "cargo": "Web Developer",
+      "empresa": "Intelitec Solutions",
+      "tareas": "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.",
+      "tiempo": "December 2011 - March 2013"
+    },
+    {
+      "cargo": "Junior Web Designer",
+      "empresa": "Shout! Media Productions",
+      "tareas": "Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.",
+      "tiempo": "July 2010 - December 2011"
+    }
+  ],
+  "educacion": [
+    {
+      "establecimiento": "University of Colorado Boulder",
+      "grado": "Bachelor of Science",
+      "titulo": "Computer Science - Web Development Track",
+      "tiempo": "August 2006 - May 2010"
+    },
+    {
+      "establecimiento": "James Buchanan High School",
+      "grado": "Technology Magnet Program",
+      "titulo": "",
+      "tiempo": "August 2002 - May 2006"
+    },
+    {
+      "establecimiento": "Universidad Tecnologica Nacional - Argentina",
+      "grado": "Certificación",
+      "titulo": "Desarrollo Web Full Stack",
+      "tiempo": "Septiembre 2023"
+    }
+  ],
+  "workflow": [
+    {
+      "nombre": "Mobile-First, Responsive Design",
+      "porcentaje": ""
+    },
+    {
+      "nombre": "Cross Browser Testing & Debugging",
+      "porcentaje": ""
+    },
+    {
+      "nombre": "Cross Functional Teams",
+      "porcentaje": ""
+    },
+    {
+      "nombre": "Agile Development & Scrum",
+      "porcentaje": ""
+    }
+  ],
+  "logros": [
+    {
+      "nombre": "100 días de código - JavaScript"
+    },
+    {
+      "nombre": "Challenge Encriptación - Oracle + Alura"
+    },
+    {
+      "nombre": "Responsive Web Design - FreeCodeCamp"
+    },
+    {
+      "nombre": "Data Visualisation Python - JPMorgan Chase's Perspective"
+    },
+    {
+      "nombre": "Data Science - IBM"
+    }
+  ]
 }
