@@ -1,0 +1,57 @@
+<div class="container">
+  <h1 class="m-5 text-center">Inicio de Sesion</h1>
+  <p class="text-center pb-4">*Habilita la edición del Portafolio*</p>
+  <div class="rounded-4 p-1" id="Form">
+    <form [formGroup]="form" class="m-5" (ngSubmit)="onEnviar($event)" >
+      <div class="mb-3">
+        <label for="usuario" class="form-label">Email:</label>
+        <input
+          type="email"
+          formControlName="email"
+          [ngClass]="{
+            'form-control': true,
+            'is-invalid': email?.errors && email?.touched,
+            'is-valid': email?.valid && email?.touched
+          }"
+          class="form-control"
+          id="Email"
+          aria-describedby="emailHelp"
+        />
+        <div *ngIf="email?.errors && email?.touched">
+          <small id="emailHelp" class="form-text text-muted"
+            >Nunca compartiremos tu correo electrónico con nadie más.</small
+          >
+          <p *ngIf="email?.hasError('required')" class="text-danger">
+            El email es requerido
+          </p>
+          <p *ngIf="email?.hasError('email')" class="text-danger">
+            El email no es valido
+          </p>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password:</label>
+        <input
+          type="password"
+          formControlName="password"
+          [ngClass]="{
+            'form-control': true,
+            'is-invalid': password?.errors && password?.touched,
+            'is-valid': password?.valid && password?.touched
+          }"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+        <div *ngIf="password?.errors && password?.touched">
+          <p *ngIf="password?.hasError('required')" class="text-danger">
+            El password es requerido
+          </p>
+          <p *ngIf="password?.hasError('minlength')" class="text-danger">
+            El password debe tener minimo 8 caracteres
+          </p>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+    </form>
+  </div>
+</div>

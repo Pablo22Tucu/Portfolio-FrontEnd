@@ -76,5 +76,14 @@
     {
       "nombre": "Data Science - IBM"
     }
-  ]
+  ],
+  "proyectos": [
+    {
+      "nombre": "Proyecto 1",
+      "tecnologias": "HTML, CSS, JavaScript",
+      "descripcion": "Lorem ipsum",
+      "imagen": "../assets/imagenes/proyecto1.jpg",
+      "link": "https://www.google.com"
+    }
+  ]    
 }

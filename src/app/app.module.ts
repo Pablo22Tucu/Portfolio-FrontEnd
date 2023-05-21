@@ -8,9 +8,13 @@ import { SobremiComponent } from './component/sobremi/sobremi.component';
 import { ExpyeduComponent } from './component/expyedu/expyedu.component';
 import { SkillylogrosComponent } from './component/skillylogros/skillylogros.component';
 import { PiepaginaComponent } from './component/piepagina/piepagina.component';
-//import { InfportfolioService } from './services/infportfolio.service';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { ScrollToTopComponent } from './component/scroll-to-top/scroll-to-top.component';
+import { SesionComponent } from './component/sesion/sesion.component';
+import { PortfolioComponent } from './component/portfolio/portfolio.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { InfportfolioService } from './services/infportfolio.service';
+import { InterceptorService } from './services/interceptor.service';
 
 @NgModule({
   declarations: [
@@ -20,14 +24,19 @@ import { ScrollToTopComponent } from './component/scroll-to-top/scroll-to-top.co
     ExpyeduComponent,
     SkillylogrosComponent,
     PiepaginaComponent,
-    ScrollToTopComponent
+    ScrollToTopComponent,
+    SesionComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [InfportfolioService,
+    { provide: HTTP_INTERCEPTORS, useClass: InterceptorService, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

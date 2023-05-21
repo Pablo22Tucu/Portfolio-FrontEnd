@@ -1,8 +1,15 @@
 <!-- Skills-->
 <section class="resume-section m-2" id="skills">
-  <div class="resume-section-content">
-    <h2 class="mb-5">Skills</h2>
-    <div class="subheading mb-3">Programming Languages & Tools:</div>
+  <div class="m-3 resume-section-content">
+    <div class="d-flex">
+      <h2 class="mb-5">Skills</h2>
+      <div class="d-flex ms-auto">
+        <button type="button" class="btn btn-danger btn-circle mt-0 me-4">
+          <i class="fa fa-edit"></i>
+        </button>
+      </div>
+    </div>
+      <div class="subheading mb-3">Programming Languages & Tools:</div>
     <ul class="list-inline dev-icons">
       <a class="list-inline-item social-icon m-2"
         ><i class="fab fa-html5 fa-3x"></i
@@ -32,8 +39,15 @@
 <!-- Awards-->
 <section class="resume-section m-2" id="awards">
   <div class="resume-section-content">
-    <h2 class="mb-5">Awards & Certifications</h2>
-    <ul *ngFor="let logro of infoPortfolio?.logros" class="fa-ul mb-0">
+    <div class="d-flex m-3">
+      <h2 class="mb-5">Awards & Certifications</h2>
+      <div class="d-flex ms-auto">
+        <button type="button" class="btn btn-danger btn-circle mt-0 me-4">
+          <i class="fa fa-edit"></i>
+        </button>
+      </div>
+    </div>
+      <ul *ngFor="let logro of infoPortfolio?.logros" class="fa-ul mb-0">
       <li>
         <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
         {{ logro.nombre }}

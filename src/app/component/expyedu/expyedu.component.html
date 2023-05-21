@@ -1,7 +1,15 @@
 <!-- Experience-->
 <section class="resume-section" id="experience">
   <div class="resume-section-content m-4">
-    <h2 class="mb-5">Experience</h2>
+    <div class="d-flex">
+      <h2 class="mb-5">Experience</h2>
+      <div class="d-flex ms-auto">
+        <button type="button" class="btn btn-danger btn-circle mt-0 me-4">
+          <i class="fa fa-edit"></i>
+        </button>
+      </div>
+    </div>
+
     <div
       *ngFor="let exp of miPortfolio?.experiencia"
       class="d-flex flex-column flex-md-row justify-content-between mb-5"
@@ -21,7 +29,14 @@
 <!-- Education-->
 <section class="resume-section m-4" id="education">
   <div class="resume-section-content">
-    <h2 class="mb-5">Education</h2>
+    <div class="d-flex">
+      <h2 class="mb-5">Education</h2>
+      <div class="d-flex ms-auto">
+        <button type="button" class="btn btn-danger btn-circle mt-0 me-4">
+          <i class="fa fa-edit"></i>
+        </button>
+      </div>
+    </div>  
     <div
       *ngFor="let edu of miPortfolio?.educacion"
       class="d-flex flex-column flex-md-row justify-content-between mb-5"

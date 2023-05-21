@@ -10,11 +10,13 @@ import { InfportfolioService } from 'src/app/services/infportfolio.service';
 
 export class EncabezadoComponent implements OnInit{
   miPortfolio:any = [];
+  mostrarBoton:boolean = false;
+  
   constructor(private datosPortfolio:InfportfolioService) { }
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerInfPortfolio().subscribe(data =>{
-      this.miPortfolio = data;     
+      this.miPortfolio = data[0];     
     });
   }
 

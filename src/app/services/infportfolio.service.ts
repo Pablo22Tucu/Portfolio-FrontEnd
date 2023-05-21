@@ -6,10 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class InfportfolioService {
+  url: string = "http://localhost:3000/api/infportfolio";
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  obtenerInfPortfolio():Observable<any> {
-    return this.http.get('./assets/data/data.json');
-  }  
+  obtenerInfPortfolio(): Observable<any> {
+    return this.http.get<any>(this.url + "persona");
+  }
 }
